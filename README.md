@@ -16,10 +16,6 @@
 
 > :eyes: Observação: Para evitar erros no avaliador, na preparação do seu ambiente de trabalho para o uso do Context API, é necessário que o `<Provider>` seja usado dentro do componente `App.js` e não no arquivo `index.js`. Esta orientação tem finalidade exclusiva para os testes deste projeto.
 
-<details><summary> Ilustração da tabela:</summary>
-
-  ![image](req-1.png)
-</details><br />
 
 <details><summary> A tabela deve ser renderizada por um componente chamado <code>Table</code>:</summary>
 
@@ -42,10 +38,7 @@
 ---
 
 ## 2 - Crie um filtro de texto para a tabela
-<details><summary> A tabela deve ser atualizada com os planetas que se encaixam no filtro à medida que o nome é digitado, sem ter que apertar em um botão para efetuar a filtragem. Por exemplo, se for digitado "Tatoo" no campo de texto, o planeta "Tatooine" deve ser exibido, como demonstrado na <b>ilustração</b>:</summary>
-
-  ![img](req-2.gif)
-</details><br />
+<details><summary> A tabela deve ser atualizada com os planetas que se encaixam no filtro à medida que o nome é digitado, sem ter que apertar em um botão para efetuar a filtragem. Por exemplo, se for digitado "Tatoo" no campo de texto, o planeta "Tatooine" deve ser exibido, como demonstrado na 
 
 <details><summary>Observações técnicas</summary>
 
@@ -91,12 +84,6 @@
   - A seleção `diameter | menor que | 8000` - Seleciona somente planetas com diâmetro menor que 8000.
 </details>
 
-<details><summary><b>Ilustração do filtro:</b></summary>
-
-  ![img](req-3.gif)
-</details><br />
-
-
 <details><summary>Observações técnicas</summary>
 
   * Você deve usar **Context API e Hooks** para fazer o gerenciamento do estado da aplicação;
@@ -132,11 +119,6 @@
 ---
 
 ## 4 - Implemente múltiplos filtros numéricos
-
-<details><summary> Deverá ser possível adicionar múltiplos filtros numéricos. Todos os filtros adicionados devem funcionar de forma conjunta:</summary>
-
-  ![img](req-4.gif)
-</details><br />
 
 Por exemplo, você pode filtrar pelos planetas que possuam _Orbital period maior que 400_  **e** _Diameter menor que 10000_.
 
@@ -178,11 +160,6 @@ Por exemplo, você pode filtrar pelos planetas que possuam _Orbital period maior
   * Caso todas as colunas já tenham sido inclusas em filtros anteriores, não deve ser carregado um novo filtro;
   * Você deve usar **Context API e Hooks** para fazer o gerenciamento do estado da aplicação.
 </details>
-
-<details><summary> Ilustração:</summary>
-
-  ![img](req-6.gif)
-</details><br />
 
 <details><summary> Exemplo:</summary>
 
@@ -239,11 +216,6 @@ Por exemplo, você pode filtrar pelos planetas que possuam _Orbital period maior
 
 
 * O `button` de `Remover todas filtragens` deverá possuir o `data-testid='button-remove-filters'`. Este `button` será responsável pela remoção de todos os filtros numéricos simultaneamente.
-
-<details><summary> Ilustração do requisito:</summary>
-
-  ![img](req-7.gif)
-</details>
 
 <br /><details>
   <summary><strong>O que será verificado</strong></summary><br />
@@ -321,11 +293,6 @@ Por exemplo, você pode filtrar pelos planetas que possuam _Orbital period maior
 * Por fim, crie um botão para submeter a ordenação, com uma tag `button` e a propriedade `data-testid='column-sort-button'`.
 
 * Adicione o atributo `data-testid` com o valor `planet-name` em todos os elementos da tabela que possuem o nome de um planeta.
-
-<details><summary><b> Ilustração do requisito:</b></summary>
-
-  ![img](req-9.gif)
-</details>
 
 <br /><details>
   <summary><strong>O que será verificado</strong></summary><br />
